@@ -9,5 +9,5 @@ def saveData(String key, String value) {
 }
 
 def loadData(String key) {
-    return new File("${JENKINS_HOME}/shared_data/${key}.txt").text
+    return new File("/var/jenkins_home/shared_data/${key}.txt").text
 }
